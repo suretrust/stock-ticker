@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TickerDetails component renders TickerDetails as fragment 1`] = `
+<DocumentFragment>
+  <div
+    class="ticker-details-box"
+  >
+    <img
+      alt="test name"
+      class="ticker-logo"
+      src="logo"
+    />
+    <div
+      class="ticker-name"
+    >
+      test name
+    </div>
+    <div
+      class="ticker-sector"
+    >
+      test sector
+    </div>
+    <div
+      class="price-and-color"
+    >
+      <div
+        class="ticker-price"
+      >
+        126 USD
+      </div>
+      <div
+        class="ticker-color ticker-up"
+        style="color: rgb(55, 173, 148);"
+      >
+        +1 (0.79%)
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

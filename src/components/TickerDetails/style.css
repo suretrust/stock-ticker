@@ -1,0 +1,49 @@
+.ticker-details-box {
+    margin-top: 85px;
+}
+
+.ticker-name {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32px;
+    color: #00264C;
+    margin-top: 34px;
+    margin-bottom: 4px;
+}
+
+.ticker-sector {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #728BA3;
+}
+
+.price-and-color {
+    margin-top: 24px;
+}
+
+.ticker-price {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #00264C;
+}
+
+.ticker-color {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.ticker-up:after {
+    content: url('/src/images/arrow-up.svg');
+    margin-left: 15px;
+}
+
+.ticker-down:after {
+    content: url('/src/images/arrow-down.svg');
+    margin-left: 15px;
+    display: inline-block;
+    transform: rotate(180deg);
+}
