@@ -2,6 +2,10 @@
 
 This is a simple React stock ticker app with an integrated API (Polygon.io). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<img width="1440" alt="Screenshot 2021-05-09 at 21 31 30" src="https://user-images.githubusercontent.com/31304943/117589605-7bdcbb80-b122-11eb-94bc-11f6a21323f1.png">
+<img width="1440" alt="Screenshot 2021-05-09 at 21 31 50" src="https://user-images.githubusercontent.com/31304943/117589611-8303c980-b122-11eb-8681-30b1d359ec08.png">
+
+
 ### Requirements
 
 1. A user can type in a stock ticker (Ex: TSLA) and it displays a list of tickers matching with the input, in real time
