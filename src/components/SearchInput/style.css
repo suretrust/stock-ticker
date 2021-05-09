@@ -1,0 +1,28 @@
+input {
+    width: 382px;
+    max-width: 440px;
+    min-width: 220px;
+    height: 54px;
+    background: #F5F8FA;
+    border-radius: 8px;
+    border: none;
+    background-image: url('../../images/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 17.47px;
+    padding-left: 56px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #00264C;
+    margin-bottom: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 13px;
+    line-height: 16px;
+    color: #728BA3;
+    opacity: 1;
+}

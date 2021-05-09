@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput component renders SearchInput as fragment 1`] = `
+<DocumentFragment>
+  <input
+    placeholder="Search for stock ticker"
+    type="text"
+    value="test"
+  />
+</DocumentFragment>
+`;
