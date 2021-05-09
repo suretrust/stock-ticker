@@ -20,7 +20,14 @@ This is a simple React stock ticker app with an integrated API (Polygon.io). Thi
 
  [Figma Design](https://www.figma.com/file/npYI4Am7sdgzH2VZSVmZYl/Test-Task-Ticker-Impakt) — Due to the response from the search API and limit of 5 responses within a minute (for free plan), the design was slightly derailed.
 
-### Launch project in development mode
+
+### Setup
+1. To set up, rename `env.template` to `.env` or `.env.local`.
+2. Get your API key from [Polygon](https://polygon.io).
+3. Replace `YOUR_POLYGON_API_KEY` with your API KEY.
+4. Launch the app.
+
+### Launch app in development mode
 
 In the project directory, you can run: `yarn start`. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
