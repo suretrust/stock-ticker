@@ -2,27 +2,41 @@
   "name": "stock-ticker",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "preset": "ts-jest/presets/js-with-ts",
+    "testEnvironment": "jest-environment-jsdom",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "modulePaths": [
+      "<rootDir>/src"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
+    "@types/jest": "^29.5.5",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react": "^4.1.0",
     "axios": "^0.21.1",
+    "browserslist-to-esbuild": "^1.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-loader-spinner": "^4.0.0",
-    "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
+    "vite": "^4.4.11",
+    "vite-tsconfig-paths": "^4.2.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +55,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.1.1"
   }
 }
