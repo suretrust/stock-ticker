@@ -1,6 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
 import { ChangeSinceLastDayProps, TickerDetailsProps } from '../App';
+import { POLYGON_API_KEY } from '../api/secret';
 
 interface TickerDetailsFunctions {
   setTickerDetails: React.Dispatch<
@@ -18,8 +19,6 @@ interface StockTickerFunctions {
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setError: React.Dispatch<React.SetStateAction<boolean>>;
 }
-
-const POLYGON_API_KEY = import.meta.env.REACT_APP_POLYGON_API_KEY;
 
 const getStockTicker = (value: string, setFunctions: StockTickerFunctions) => {
   const { setAllTickers, setError, setIsLoading } = setFunctions;
