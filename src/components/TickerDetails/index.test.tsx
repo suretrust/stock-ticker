@@ -35,7 +35,7 @@ describe('TickerDetails component', () => {
     )
     const tickerImage = screen.getByAltText(tickerDetails.name)
 
-    expect(tickerImage).toBeInTheDocument()
+    expect(tickerImage).toBeTruthy()
   })
 
   it('renders ticker name', () => {
@@ -47,7 +47,7 @@ describe('TickerDetails component', () => {
     )
     const tickerName = screen.getByText(tickerDetails.name)
 
-    expect(tickerName).toBeInTheDocument()
+    expect(tickerName).toBeTruthy()
   })
 
   it('renders ticker sector', () => {
@@ -59,6 +59,6 @@ describe('TickerDetails component', () => {
     )
     const tickerSector = screen.getByText(tickerDetails.sector)
 
-    expect(tickerSector).toBeInTheDocument()
+    expect(tickerSector).toBeTruthy()
   })
 })

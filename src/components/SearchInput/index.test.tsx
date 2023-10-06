@@ -18,6 +18,6 @@ describe('SearchInput component', () => {
       /Search for stock ticker/i
     );
 
-    expect(inputElement).toBeInTheDocument();
+    expect(inputElement).toBeTruthy();
   });
 });

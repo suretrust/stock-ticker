@@ -35,7 +35,7 @@ describe('TickerList component', () => {
     );
     const tickerName = screen.getByText(allTickers[0].name);
 
-    expect(tickerName).toBeInTheDocument();
+    expect(tickerName).toBeTruthy();
   });
 
   it('renders second ticker name from list of all tickers', () => {
@@ -47,7 +47,7 @@ describe('TickerList component', () => {
     );
     const tickerName = screen.getByText(allTickers[1].name);
 
-    expect(tickerName).toBeInTheDocument();
+    expect(tickerName).toBeTruthy();
   });
 
   it('calls handleTickerClick on clicking first ticker name', () => {

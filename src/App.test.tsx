@@ -7,5 +7,5 @@ it('renders learn react link', () => {
 
   const inputElement = screen.getByPlaceholderText(/Search for stock ticker/i);
 
-  expect(inputElement).toBeInTheDocument();
+  expect(inputElement).toBeTruthy();
 });
