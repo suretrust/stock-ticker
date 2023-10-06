@@ -32,6 +32,7 @@ const TickerDetails: React.FC<Props> = ({
         className='ticker-logo'
         src={tickerDetails.logo}
         alt={tickerDetails.name}
+        width="100"
       />
       <div className='ticker-name'>{tickerDetails.name}</div>
       <div className='ticker-sector'>{tickerDetails.sector}</div>

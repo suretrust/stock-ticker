@@ -9,6 +9,7 @@ exports[`TickerDetails component renders TickerDetails as fragment 1`] = `
       alt="test name"
       class="ticker-logo"
       src="logo"
+      width="100"
     />
     <div
       class="ticker-name"
