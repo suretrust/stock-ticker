@@ -19,7 +19,7 @@ interface StockTickerFunctions {
   setError: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const POLYGON_API_KEY = process.env.REACT_APP_POLYGON_API_KEY;
+const POLYGON_API_KEY = import.meta.env.REACT_APP_POLYGON_API_KEY;
 
 const getStockTicker = (value: string, setFunctions: StockTickerFunctions) => {
   const { setAllTickers, setError, setIsLoading } = setFunctions;
